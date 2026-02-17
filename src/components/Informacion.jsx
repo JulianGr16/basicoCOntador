@@ -1,3 +1,4 @@
+import Contador from "./Contador";
 import Teoria from "./Teoria";
 
 const Informacion = () => {
@@ -12,6 +13,7 @@ const anio = new Date().getFullYear()
         móvil
       </p>
       <Teoria comision='101i' anioActual={anio}/>
+      <Contador/>
     </section>
   );
 };
