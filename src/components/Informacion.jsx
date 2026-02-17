@@ -1,4 +1,7 @@
+import Teoria from "./Teoria";
+
 const Informacion = () => {
+const anio = new Date().getFullYear()
   return (
     <section>
       <h2>¿Ques es react?</h2>
@@ -6,8 +9,9 @@ const Informacion = () => {
         React es una biblioteca de JavaScript de código abierto, desarrollada
         por Facebook, utilizada para construir interfaces de usuario (UI)
         interactivas y escalables, principalmente para aplicaciones web y
-        móviles
+        móvil
       </p>
+      <Teoria comision='101i' anioActual={anio}/>
     </section>
   );
 };
