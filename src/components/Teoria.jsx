@@ -1,8 +1,8 @@
-const Teoria = (props) => {
+const Teoria = ({comision, anioActual}) => {
     return (
         <article>
             <h3>¿Props?</h3>
-            <h4>Comision : {props.comision} - infoActual : {props.anioActual}</h4>
+            <h4>Comision : {comision} - infoActual : {anioActual}</h4>
         </article>
     );
 };
