@@ -6,16 +6,13 @@ const Contador = () => {
         setContador(contador + 1)
     }
 
-    const restar = ()=>{
-        setContador(contador - 1)
-    }
 
     return (
         <section className="my-2 text-center">
             <h2 className="fw-bold">contador</h2>
             <h4>{contador}</h4>
             <button className="btn btn-primary me-1" onClick={sumar}>+1</button>
-            <button className="btn btn-danger" onClick={restar}>-1</button>
+            <button className="btn btn-danger" onClick={()=> setContador(contador - 1)}>-1</button>
         </section>
     );
 };
